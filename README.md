@@ -3,7 +3,7 @@ created by Andreas Spiegel
 
 MIT-license
 
-Download Nuget-Package: https://www.nuget.org/packages/ASControls.RichTextEditor/1.1.0
+Download Nuget-Package: https://www.nuget.org/packages/ASControls.RichTextEditor/
 
 ### an extended richtextbox
 
