@@ -1,7 +1,4 @@
 ﻿# RichTextEditor
-created by Andreas Spiegel
-
-MIT-license
 
 Download Nuget-Package: https://www.nuget.org/packages/ASControls.RichTextEditor/
 
