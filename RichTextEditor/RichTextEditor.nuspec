@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding = "utf-8"?>
+<package>
+  <metadata>
+     <id>ASControls.RichTextEditor</id>
+     <version>1.1.0</version>
+     <title>RichTextEditor</title>
+     <authors>Andreas Spiegel</authors>
+     <description>Eine Richtextbox mit zahlreichen Bearbeitungselementen</description>
+     <tags>RichText rtf editor richtextbox</tags>
+     <copyright>Andreas Spiegel</copyright>
+     <requireLicenseAcceptance>true</requireLicenseAcceptance>
+     <license type="expression">MIT</license>
+     <icon>lib/2315877_document_extension_folder_paper_rtf_icon.png</icon>
+  </metadata>
+  <files>
+     <file src="G:\Entwicklung\Private Repos\ASControls\RichTextEditor\Icons\2315877_document_extension_folder_paper_rtf_icon.png" target="lib\"/>
+  </files>
+</package>

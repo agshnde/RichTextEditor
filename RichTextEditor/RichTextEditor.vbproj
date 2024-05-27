@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{85C1B8CA-30E0-41B1-8A12-938690A7ABC0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>RichTextEditor</RootNamespace>
+    <AssemblyName>RichTextEditor</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>RichTextEditor.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>RichTextEditor.xml</DocumentationFile>
+    <DefineConstants>_MYFORMS=True</DefineConstants>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Public Class richtextboxeditor.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Public Class richtextboxeditor.Designer.vb">
+      <DependentUpon>Public Class richtextboxeditor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Public Class richtextboxeditor.resx">
+      <DependentUpon>Public Class richtextboxeditor.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\Lizenzen\LicenseHeader\MIT.licenseheader">
+      <Link>MIT.licenseheader</Link>
+    </None>
+    <None Include="License.md" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application-x-font-ttf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-text-italic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-text-bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\format-text-underline.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\format-text-color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\118763_text_bold_format_format_text_bold.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\118764_format_italic_text_text_italic_format.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\118766_underline_underline_text_format_text_format.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Aufzaehlung_aus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Aufzaehlung_ein.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\clipb_paste.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\clipboard_copy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\clipboard_cut.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\EInzug_vergroessern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Einzug_verkleinern.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Oxygen-Icons.org-Oxygen-Actions-format-stroke-color.24.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Schrift_Groesser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Schrift_Kleiner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Icons\Schriftdialog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.md" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
