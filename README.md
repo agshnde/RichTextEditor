@@ -24,3 +24,7 @@ Properties for collaboration with the host program
 - switch toolbar on/off
 - color of the menu strip
 - papercolor / sheetcolor
+
+  Used Icons:
+  https://github.com/KDE/oxygen-icons/tree/master
+  
