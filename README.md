@@ -1,11 +1,11 @@
 ﻿# RichTextEditor
 
-Download Nuget-Package: https://www.nuget.org/packages/ASControls.RichTextEditor/
-
 ![image](https://github.com/agshnde/RichTextEditor/assets/11722689/b9c8f481-5f74-4724-964e-3b76a11e1841)
 
 
 ### An extended richtextbox for use in Visual Studio
+
+Download Nuget-Package: https://www.nuget.org/packages/ASControls.RichTextEditor/
 
 Features:
 - font, font size, font color
